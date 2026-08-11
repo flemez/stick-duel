@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stick Duel — Strichmännchen-Fechtduell</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="960" height="540"></canvas>
+
+    <div id="menu" class="overlay">
+      <h1>STICK&nbsp;DUEL</h1>
+      <p class="tag">Strichmännchen-Fechtduell im Nidhogg-Stil</p>
+
+      <div class="controls">
+        <div class="col p1">
+          <h2>Spieler 1</h2>
+          <ul>
+            <li><b>A / D</b> — Laufen</li>
+            <li><b>W</b> — Degen hoch halten</li>
+            <li><b>S</b> — Ducken / Degen tief</li>
+            <li><b>Leertaste</b> — Springen</li>
+            <li><b>F</b> — Zustechen</li>
+            <li><b>G</b> — Degen werfen</li>
+          </ul>
+        </div>
+        <div class="col p2">
+          <h2>Spieler 2</h2>
+          <ul>
+            <li><b>◀ / ▶</b> — Laufen</li>
+            <li><b>▲</b> — Degen hoch halten</li>
+            <li><b>▼</b> — Ducken / Degen tief</li>
+            <li><b>Rechte Umschalt</b> — Springen</li>
+            <li><b>.</b> (Punkt) — Zustechen</li>
+            <li><b>/</b> (Slash) — Degen werfen</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="modes">
+        <button id="btn-2p" class="btn">2 Spieler</button>
+        <button id="btn-cpu" class="btn">1 Spieler vs. CPU</button>
+      </div>
+      <p class="hint">Ziel: Killt euch bis zum gegnerischen Rand durch. Ein Treffer genügt.<br>
+      Blocken = Degen auf gleicher Höhe halten. Springt über tiefe Stiche, duckt euch unter hohe.</p>
+    </div>
+
+    <div id="winscreen" class="overlay hidden">
+      <h1 id="win-title">Spieler&nbsp;1 gewinnt!</h1>
+      <button id="btn-again" class="btn">Nochmal (Enter)</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
