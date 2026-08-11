@@ -7,7 +7,11 @@ mehrere Bildschirme hinweg entsteht ein Tauziehen um das **Momentum**.
 
 Läuft komplett offline in jedem modernen Browser — keine Abhängigkeiten, keine Installation.
 
-## Spielen
+## ▶️ Jetzt spielen
+
+**[flemez.github.io/stick-duel](https://flemez.github.io/stick-duel/)** — einfach im Browser öffnen.
+
+## Lokal spielen
 
 Da moderne Browser `file://`-Seiten mit strengen Sicherheitsregeln laden, startest du am
 einfachsten einen kleinen lokalen Server im Projektordner:
